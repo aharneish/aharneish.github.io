@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aharneish Abburu | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #61dafb;
+        }
+        section {
+            padding: 2rem;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .project {
+            margin-bottom: 2rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .typing-animation {
+            font-size: 1.2rem;
+            color: #61dafb;
+        }
+        .contact-card {
+            display: inline-block;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            margin: 1rem;
+            transition: box-shadow 0.3s;
+        }
+        .contact-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .scroll-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #61dafb;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aharneish Abburu</h1>
+        <p class="typing-animation"></p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am experienced in fine-tuning large language models (LLMs) and advanced data curation. Skilled in leveraging cutting-edge NLP methodologies, I am eager to contribute to the evolving field of Data Science and NLP.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>Python</div>
+            <div>NLP</div>
+            <div>Deep Learning</div>
+            <div>TensorFlow</div>
+            <div>PyTorch</div>
+            <div>Machine Learning</div>
+            <div>HuggingFace API</div>
+            <div>LangChain</div>
+            <div>Azure</div>
+            <div>Chatbots</div>
+            <div>Generative AI</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Explore the Sacred Within: Chat with KarmaKatha</h3>
+            <p>Developed an AI chatbot integrating ancient wisdom with modern AI techniques for personalized life assistance using advanced NLP, Low-Rank Adaptation (LoRA), and Retrieval-Augmented Generation (RAG).</p>
+        </div>
+
+        <div class="project">
+            <h3>Heart Disease Prediction</h3>
+            <p>Developed a tool to predict the likelihood of heart disease using various machine learning models like Random Forest, K-Nearest Neighbors, Logistic Regression, and Naive Bayes. Deployed locally using Flask.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-card">
+            <p>Email: <a href="mailto:Aharneish@gmail.com">Aharneish@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+            <p>Phone: 9866648404</p>
+        </div>
+        <div class="contact-card">
+            <p>LinkedIn: <a href="https://linkedin.com/in/aharneish-abburu">linkedin.com/in/aharneish-abburu</a></p>
+        </div>
+        <div class="contact-card">
+            <p>GitHub: <a href="https://github.com/aharneish">github.com/aharneish</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aharneish Abburu</p>
+    </footer>
+
+    <button class="scroll-button" onclick="scrollToTop()">&#8679;</button>
+
+    <script>
+        new Typed('.typing-animation', {
+            strings: ["Data Scientist", "AI Engineer", "Generative AI Specialist"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
