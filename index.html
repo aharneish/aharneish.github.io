@@ -20,7 +20,7 @@
         header {
             background-color: #1e2a3f;
             color: white;
-            padding: 2rem;
+            padding: 3rem 0;
             text-align: center;
             position: relative;
             z-index: 1;
@@ -35,6 +35,27 @@
             background: url('background-image.jpg') no-repeat center center/cover;
             filter: blur(8px);
             z-index: -1;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay to improve text visibility */
+            z-index: -1;
+        }
+        h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for contrast */
+        }
+        p.typing-animation {
+            color: #ff9800;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-weight: bold;
         }
         nav {
             display: flex;
@@ -65,11 +86,6 @@
         section.visible {
             opacity: 1;
             transform: translateY(0);
-        }
-        h1 {
-            font-size: 3rem;
-            color: #1e2a3f;
-            margin-bottom: 1rem;
         }
         h2 {
             color: #1e2a3f;
@@ -144,6 +160,7 @@
 </head>
 <body>
     <header>
+        <div class="overlay"></div>
         <h1>Aharneish Abburu</h1>
         <p class="typing-animation"></p>
         <nav>
