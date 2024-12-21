@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Aharneish Abburu, Data Scientist, AI Engineer, Generative AI Specialist"
+    />
+    <title>Aharneish Abburu | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f0f4f8;
+        color: #333;
+        overflow-x: hidden;
+      }
+      header {
+        background: linear-gradient(
+            to bottom right,
+            rgba(30, 42, 63, 0.8),
+            rgba(30, 42, 63, 0.9)
+          ),
+          url("background-image.jpg") no-repeat center center/cover;
+        color: white;
+        padding: 5rem 0;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      h1 {
+        font-size: 4rem;
+        color: white;
+        margin-bottom: 1rem;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+      }
+      p.typing-animation {
+        color: #ff9800;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+      nav a:hover,
+      nav a.active {
+        color: #ff9800;
+      }
+      section {
+        padding: 3rem 2rem;
+        margin: 1rem auto;
+        max-width: 900px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #1e2a3f;
+        margin-bottom: 1rem;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+        text-align: center;
+      }
+      .skills-grid div {
+        background: #f9f9f9;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      .skills-grid div:hover {
+        transform: scale(1.1);
+        background: #ff9800;
+        color: white;
+      }
+      .project {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        transition: transform 0.3s ease-in-out;
+      }
+      .project:hover {
+        transform: translateY(-5px);
+        background-color: #eaeaea;
+      }
+      .contact-card {
+        display: inline-block;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        margin: 0.5rem;
+        width: 45%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: #1e2a3f;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+      }
+      .scroll-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #1e2a3f;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 1.5rem;
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .scroll-button:hover {
+        background-color: #ff9800;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Aharneish Abburu</h1>
+      <p class="typing-animation"></p>
+      <nav>
+        <a href="#about" id="about-link">About</a>
+        <a href="#skills" id="skills-link">Skills</a>
+        <a href="#projects" id="projects-link">Projects</a>
+        <a href="#contact" id="contact-link">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am experienced in fine-tuning large language models (LLMs) and
+        advanced data curation. Skilled in leveraging cutting-edge NLP
+        methodologies, I am eager to contribute to the evolving field of Data
+        Science and NLP.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>Python</div>
+        <div>NLP</div>
+        <div>Deep Learning</div>
+        <div>TensorFlow</div>
+        <div>PyTorch</div>
+        <div>Machine Learning</div>
+        <div>HuggingFace API</div>
+        <div>LangChain</div>
+        <div>Azure</div>
+        <div>Chatbots</div>
+        <div>Generative AI</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Explore the Sacred Within: Chat with KarmaKatha</h3>
+        <p>
+          Developed an AI chatbot integrating ancient wisdom with modern AI
+          techniques for personalized life assistance using advanced NLP,
+          Low-Rank Adaptation (LoRA), and Retrieval-Augmented Generation (RAG).
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Heart Disease Prediction</h3>
+        <p>
+          Developed a tool to predict the likelihood of heart disease using
+          various machine learning models like Random Forest, K-Nearest
+          Neighbors, Logistic Regression, and Naive Bayes. Deployed locally
+          using Flask.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>GitHub Projects</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/aharneish/linear-algebra-"
+              >Linear Algebra Techniques</a
+            >
+            - A repository showcasing various linear algebra techniques.
+          </li>
+          <li>
+            <a href="https://github.com/aharneish/python-lab">Python Lab</a> -
+            Python exercises and assignments including data analysis and
+            visualization.
+          </li>
+          <li>
+            <a href="https://github.com/aharneish/titanic-dataset-practice"
+              >Titanic Dataset Practice</a
+            >
+            - Data analysis and machine learning practices on the Titanic
+            dataset.
+          </li>
+          <li>
+            <a href="https://github.com/aharneish/R-lab">R Lab</a> -
+            Multivariate stats and regression methods using R.
+          </li>
+          <li>
+            <a href="https://github.com/aharneish/textbooks"
+              >Textbooks Repository</a
+            >
+            - Collection of PDFs for Python and data science learning.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p>
+          Email: <a href="mailto:Aharneish@gmail.com">Aharneish@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-card">
+        <p>Phone: 9866648404</p>
+      </div>
+      <div class="contact-card">
+        <p>
+          LinkedIn:
+          <a href="https://linkedin.com/in/aharneish-abburu"
+            >linkedin.com/in/aharneish-abburu</a
+          >
+        </p>
+      </div>
+      <div class="contact-card">
+        <p>
+          GitHub:
+          <a href="https://github.com/aharneish">github.com/aharneish</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Aharneish Abburu</p>
+    </footer>
+
+    <button class="scroll-button" onclick="scrollToTop()">&#8679;</button>
+
+    <script>
+      new Typed(".typing-animation", {
+        strings: ["Data Scientist", "AI Engineer", "Generative AI Specialist"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
